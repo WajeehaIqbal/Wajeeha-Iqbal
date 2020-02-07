@@ -1,0 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mad_ass1_q1;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author saleh
+ */
+public class ProjectManager extends SoftwareDeveloper
+{
+    SoftwareDeveloper s=new SoftwareDeveloper();
+    private ArrayList<String>PM;
+ public ProjectManager()
+ {
+     basepayrate=0.0;
+     PM=new ArrayList<String>();
+ }
+ 
+ public void setbasepay(double p)
+ {
+     basepayrate=p;
+ }
+ protected void bb()
+ {
+     s.bb();
+     PM.add(" Travell Bonuses");
+     PM.add("Sports");
+     PM.add("Medical Benifits");
+     System.out.println(PM);
+ }
+}
