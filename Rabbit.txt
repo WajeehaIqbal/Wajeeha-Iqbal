@@ -1,0 +1,26 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mad_ass2_q2;
+
+/**
+ *
+ * @author saleh
+ */
+public class Rabbit extends Animal 
+{
+    public void hop()
+    {
+        System.out.println("Rabbit Hop");
+    }
+    void Breathe()
+    {
+        System.out.println("Rabbit breathe");
+    }
+    void food()
+    {
+         System.out.println("Rabbit Eat");
+    }
+}
