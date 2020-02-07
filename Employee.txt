@@ -1,0 +1,49 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mad_ass1_q1;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author saleh
+ */
+public class Employee 
+{
+ private int empid;
+ double basepayrate;
+ private double payrate;
+ private ArrayList<String>b;
+ public Employee()
+ {
+     basepayrate=0.0;
+     payrate=0.0;
+ }
+ public Employee(int m)
+ {
+     empid=m;
+     b=new ArrayList<String>();
+ }
+ public void setbasepay(double p)
+ {
+     basepayrate=p;
+ }
+ protected void bb()
+ {
+     b.add("Health Insurance");
+     b.add("Discount");
+     b.add("Meals");
+     b.add("Bonuses");
+     b.add("Training");
+     System.out.println(b);
+ }
+ void calculatedpay()
+ {
+     setbasepay(basepayrate);
+     payrate=basepayrate*30;
+      System.out.println("Pay Rate: "+payrate);
+ }
+}
