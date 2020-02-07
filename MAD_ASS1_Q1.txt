@@ -1,0 +1,58 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mad_ass1_q1;
+
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/**
+ *
+ * @author saleh
+ */
+public class MAD_ASS1_Q1
+{
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args)
+    {
+        
+        ArrayList<Employee> objE = new ArrayList<Employee>(3);
+        Employee obje1=new Intern();
+        SoftwareDeveloper obje2=new ProjectManager();
+        Employee obje3=new SoftwareDeveloper();
+        Scanner in=new Scanner(System.in);
+        System.out.println("Calcutaing the basepay for 3 Employee of 3 types of employee");
+        for(int x=0;x<3;x++)
+        {
+            System.out.println("Benifits for interns: ");
+            obje1.bb();
+            System.out.println("Enter Basepay for Interns: ");
+            double pay1=in.nextDouble();
+            obje1.setbasepay(pay1);
+            obje1.calculatedpay();
+            objE.add(obje1);
+           // System.out.println("Benefits for ProjectManager: ");
+           // obje2.bb();
+            System.out.println("Enter Basepay for ProjectManager: ");
+            double pay2=in.nextDouble();
+            obje2.setbasepay(pay2);
+            obje2.calculatedpay();
+            objE.add(obje2);
+           // System.out.println("Benefits for SoftwareDeveloper: ");
+           // obje3.bb();
+            System.out.println("Enter Basepay for SoftwareDeveloper: ");
+            double pay3=in.nextDouble();
+            obje3.setbasepay(pay3);
+            obje3.calculatedpay();
+            objE.add(obje3);
+        }
+        // TODO code application logic here
+    }
+    
+}
