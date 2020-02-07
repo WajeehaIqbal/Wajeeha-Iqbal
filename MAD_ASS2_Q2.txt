@@ -1,0 +1,37 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mad_ass2_q2;
+
+/**
+ *
+ * @author saleh
+ */
+public class MAD_ASS2_Q2 
+{
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {
+        Bird b=new Bird();
+        b.Breathe();
+        b.food();
+        b.walk();
+        b.fly();
+        b.makenest();
+        Dog d=new Dog();
+        d.Breathe();
+        d.food();
+        d.walk();
+        Rabbit r=new Rabbit();
+        r.Breathe();
+        r.food();
+        r.hop();
+        // TODO code application logic here
+    }
+    
+}
